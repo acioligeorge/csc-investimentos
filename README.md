@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# SCS - Investimentos
 
-## Project info
+## Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/2c3d5f7b-e9c8-4e16-b4f4-46d5212f8af5
+O SCS - Investimentos é um site moderno e profissional focado em serviços de investimentos e consultoria financeira. Este projeto foi desenvolvido utilizando tecnologias web de ponta para proporcionar uma experiência excepcional aos investidores.
 
-## How can I edit this code?
+## Visão Geral
 
-There are several ways of editing your application.
+O site serve como porta de entrada para:
+- Apresentação dos serviços de investimento
+- Histórico e desempenho dos investimentos
+- Informações sobre nossa abordagem de investimentos
+- Canal direto de contato com nossa equipe
 
-**Use Lovable**
+## Começando
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2c3d5f7b-e9c8-4e16-b4f4-46d5212f8af5) and start prompting.
+Para executar este projeto localmente, você precisará ter o Node.js instalado em sua máquina.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Pré-requisitos
 
-**Use your preferred IDE**
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Instalação
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone o repositório:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/acioligeorge/csc-solutions-hub.git
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Entre no diretório do projeto:
+```sh
+cd csc-solutions-hub
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Instale as dependências:
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Inicie o servidor de desenvolvimento:
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O site estará disponível em `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Tecnologias Utilizadas
 
-**Use GitHub Codespaces**
+O site foi desenvolvido com um conjunto robusto de tecnologias modernas:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **React** - Para uma interface dinâmica e responsiva
+- **TypeScript** - Garantindo maior segurança e manutenibilidade do código
+- **Vite** - Para um desenvolvimento ágil e build otimizado
+- **Tailwind CSS** - Proporcionando um design moderno e consistente
+- **shadcn/ui** - Componentes sofisticados para melhor experiência do usuário
+- **React Router** - Navegação suave entre as páginas
 
-## What technologies are used for this project?
+## Estrutura do Projeto
 
-This project is built with:
+O site está organizado nas seguintes seções principais:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+  ├── components/     # Componentes da interface
+      ├── ui/        # Componentes base da interface
+      └── sections/  # Seções principais do site
+  ├── pages/         # Páginas do site
+      ├── Index.tsx     # Página inicial
+      ├── Historia.tsx  # Nossa história
+      ├── Servicos.tsx # Serviços oferecidos
+      ├── Portfolio.tsx # Portfólio de investimentos
+      └── Contacto.tsx  # Página de contato
+  ├── hooks/         # Hooks personalizados
+  └── lib/           # Utilitários e configurações
+```
 
-## How can I deploy this project?
+## Deploy
 
-Simply open [Lovable](https://lovable.dev/projects/2c3d5f7b-e9c8-4e16-b4f4-46d5212f8af5) and click on Share -> Publish.
+O projeto pode ser construído para produção usando:
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+npm run build
+```
 
-Yes, you can!
+Os arquivos de produção serão gerados no diretório `dist/`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Contribuindo
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Contribuições são sempre bem-vindas! Por favor, leia as diretrizes de contribuição antes de enviar um pull request.
