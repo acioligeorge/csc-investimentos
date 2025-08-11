@@ -59,26 +59,37 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'corporate-blue': {
-					50: 'hsl(var(--corporate-blue-50))',
-					500: 'hsl(var(--corporate-blue-500))',
-					600: 'hsl(var(--corporate-blue-600))',
-					700: 'hsl(var(--corporate-blue-700))',
-					900: 'hsl(var(--corporate-blue-900))'
+				'forest-green': {
+					50: 'hsl(var(--forest-green-50))',
+					100: 'hsl(var(--forest-green-100))',
+					500: 'hsl(var(--forest-green-500))',
+					600: 'hsl(var(--forest-green-600))',
+					700: 'hsl(var(--forest-green-700))',
+					800: 'hsl(var(--forest-green-800))',
+					900: 'hsl(var(--forest-green-900))'
 				},
-				'neutral-elegant': {
-					50: 'hsl(var(--neutral-elegant-50))',
-					100: 'hsl(var(--neutral-elegant-100))',
-					200: 'hsl(var(--neutral-elegant-200))',
-					600: 'hsl(var(--neutral-elegant-600))',
-					800: 'hsl(var(--neutral-elegant-800))',
-					900: 'hsl(var(--neutral-elegant-900))'
+				'elegant-gold': {
+					50: 'hsl(var(--elegant-gold-50))',
+					100: 'hsl(var(--elegant-gold-100))',
+					400: 'hsl(var(--elegant-gold-400))',
+					500: 'hsl(var(--elegant-gold-500))',
+					600: 'hsl(var(--elegant-gold-600))',
+					700: 'hsl(var(--elegant-gold-700))'
+				},
+				'neutral-warm': {
+					50: 'hsl(var(--neutral-warm-50))',
+					100: 'hsl(var(--neutral-warm-100))',
+					200: 'hsl(var(--neutral-warm-200))',
+					600: 'hsl(var(--neutral-warm-600))',
+					800: 'hsl(var(--neutral-warm-800))',
+					900: 'hsl(var(--neutral-warm-900))'
 				}
 			},
 			backgroundImage: {
-				'gradient-hero': 'linear-gradient(135deg, hsl(var(--corporate-blue-600)) 0%, hsl(var(--corporate-blue-700)) 100%)',
-				'gradient-subtle': 'linear-gradient(to bottom, hsl(var(--corporate-blue-50)) 0%, transparent 100%)',
-				'gradient-card': 'linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--neutral-elegant-50)) 100%)'
+				'gradient-hero': 'linear-gradient(135deg, hsl(var(--forest-green-700)) 0%, hsl(var(--forest-green-800)) 100%)',
+				'gradient-accent': 'linear-gradient(135deg, hsl(var(--elegant-gold-500)) 0%, hsl(var(--elegant-gold-600)) 100%)',
+				'gradient-subtle': 'linear-gradient(to bottom, hsl(var(--forest-green-50)) 0%, transparent 100%)',
+				'gradient-card': 'linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--neutral-warm-50)) 100%)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

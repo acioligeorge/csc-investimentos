@@ -37,25 +37,25 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="w-6 h-6 text-corporate-blue-600" />,
+      icon: <Phone className="w-6 h-6 text-elegant-gold-600" />,
       title: "Telefone",
       details: "+351 XXX XXX XXX",
       link: "tel:+351"
     },
     {
-      icon: <Mail className="w-6 h-6 text-corporate-blue-600" />,
+      icon: <Mail className="w-6 h-6 text-elegant-gold-600" />,
       title: "Email",
       details: "geral@csc-investimentos.pt",
       link: "mailto:geral@csc-investimentos.pt"
     },
     {
-      icon: <MapPin className="w-6 h-6 text-corporate-blue-600" />,
+      icon: <MapPin className="w-6 h-6 text-elegant-gold-600" />,
       title: "Localização",
       details: "Lisboa, Portugal",
       link: "#"
     },
     {
-      icon: <Clock className="w-6 h-6 text-corporate-blue-600" />,
+      icon: <Clock className="w-6 h-6 text-elegant-gold-600" />,
       title: "Horário",
       details: "Seg-Sex: 9h-18h",
       link: "#"
@@ -76,7 +76,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div className="animate-fade-in-up">
-            <h3 className="text-2xl font-heading font-semibold text-neutral-elegant-900 mb-8">
+            <h3 className="text-2xl font-heading font-semibold text-neutral-warm-900 mb-8">
               Informações de Contacto
             </h3>
             
@@ -85,24 +85,24 @@ const ContactSection = () => {
                 <a
                   key={index}
                   href={info.link}
-                  className="flex items-center gap-4 p-4 bg-neutral-elegant-50 rounded-xl hover:bg-neutral-elegant-100 transition-colors duration-300 group"
+                  className="flex items-center gap-4 p-4 bg-neutral-warm-50 rounded-xl hover:bg-elegant-gold-50 transition-colors duration-300 group"
                 >
-                  <div className="p-3 bg-corporate-blue-50 rounded-lg group-hover:bg-corporate-blue-100 transition-colors duration-300">
+                  <div className="p-3 bg-elegant-gold-50 rounded-lg group-hover:bg-elegant-gold-100 transition-colors duration-300">
                     {info.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-neutral-elegant-900">{info.title}</h4>
-                    <p className="text-neutral-elegant-600">{info.details}</p>
+                    <h4 className="font-semibold text-neutral-warm-900">{info.title}</h4>
+                    <p className="text-neutral-warm-600">{info.details}</p>
                   </div>
                 </a>
               ))}
             </div>
 
-            <div className="bg-gradient-card border border-neutral-elegant-200 rounded-xl p-6">
-              <h4 className="text-lg font-semibold text-neutral-elegant-900 mb-4">
+            <div className="bg-gradient-card border border-elegant-gold-200 rounded-xl p-6">
+              <h4 className="text-lg font-semibold text-neutral-warm-900 mb-4">
                 Resposta Rápida Garantida
               </h4>
-              <p className="text-neutral-elegant-600 leading-relaxed">
+              <p className="text-neutral-warm-600 leading-relaxed">
                 Comprometemo-nos a responder a todas as consultas no prazo de 24 horas. 
                 Para situações urgentes, não hesite em contactar-nos diretamente por telefone.
               </p>
@@ -114,7 +114,7 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-neutral-elegant-900 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-neutral-warm-900 mb-2">
                     Nome Completo *
                   </label>
                   <input
@@ -124,12 +124,12 @@ const ContactSection = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-neutral-elegant-300 rounded-lg focus:ring-2 focus:ring-corporate-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-neutral-warm-300 rounded-lg focus:ring-2 focus:ring-forest-green-500 focus:border-transparent transition-all duration-200"
                     placeholder="O seu nome"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-neutral-elegant-900 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-neutral-warm-900 mb-2">
                     Email *
                   </label>
                   <input
@@ -139,7 +139,7 @@ const ContactSection = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-neutral-elegant-300 rounded-lg focus:ring-2 focus:ring-corporate-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-neutral-warm-300 rounded-lg focus:ring-2 focus:ring-forest-green-500 focus:border-transparent transition-all duration-200"
                     placeholder="seuemail@exemplo.com"
                   />
                 </div>
@@ -147,7 +147,7 @@ const ContactSection = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-neutral-elegant-900 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-neutral-warm-900 mb-2">
                     Telefone
                   </label>
                   <input
@@ -156,12 +156,12 @@ const ContactSection = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-neutral-elegant-300 rounded-lg focus:ring-2 focus:ring-corporate-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-neutral-warm-300 rounded-lg focus:ring-2 focus:ring-forest-green-500 focus:border-transparent transition-all duration-200"
                     placeholder="+351 XXX XXX XXX"
                   />
                 </div>
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-neutral-elegant-900 mb-2">
+                  <label htmlFor="service" className="block text-sm font-medium text-neutral-warm-900 mb-2">
                     Serviço de Interesse
                   </label>
                   <select
@@ -169,7 +169,7 @@ const ContactSection = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-neutral-elegant-300 rounded-lg focus:ring-2 focus:ring-corporate-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-neutral-warm-300 rounded-lg focus:ring-2 focus:ring-forest-green-500 focus:border-transparent transition-all duration-200"
                   >
                     <option value="">Selecione um serviço</option>
                     <option value="mediacao">Mediação Imobiliária</option>
@@ -184,7 +184,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-neutral-elegant-900 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-neutral-warm-900 mb-2">
                   Mensagem *
                 </label>
                 <textarea
@@ -194,7 +194,7 @@ const ContactSection = () => {
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-neutral-elegant-300 rounded-lg focus:ring-2 focus:ring-corporate-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-neutral-warm-300 rounded-lg focus:ring-2 focus:ring-forest-green-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Descreva o seu projeto ou necessidade..."
                 ></textarea>
               </div>
