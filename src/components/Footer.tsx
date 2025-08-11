@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,12 +10,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
-                <span className="text-forest-green-900 font-bold text-xl">C</span>
-              </div>
-              <span className="text-2xl font-heading font-bold">CSC</span>
-            </div>
+            <Link to="/" className="flex items-center space-x-2 mb-6">
+              <img 
+                src="/lovable-uploads/c03e1008-e97b-479a-bd17-2d7b257d4078.png" 
+                alt="CSC Investimentos Imobiliários" 
+                className="h-10 w-auto"
+              />
+            </Link>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
               Investimentos Imobiliários e Serviços Diversificados. 
               A nossa empresa é a sua solução para todos os projetos 
@@ -37,11 +39,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-heading font-semibold mb-6">Links Rápidos</h3>
             <ul className="space-y-3">
-              <li><a href="#inicio" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Início</a></li>
-              <li><a href="#historia" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">História</a></li>
-              <li><a href="#servicos" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Serviços</a></li>
-              <li><a href="#portfolio" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Portfólio</a></li>
-              <li><a href="#contacto" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Contacto</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Início</Link></li>
+              <li><Link to="/historia" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">História</Link></li>
+              <li><Link to="/servicos" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Serviços</Link></li>
+              <li><Link to="/portfolio" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Portfólio</Link></li>
+              <li><Link to="/contacto" className="text-gray-300 hover:text-elegant-gold-400 transition-colors">Contacto</Link></li>
             </ul>
           </div>
 

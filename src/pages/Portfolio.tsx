@@ -1,17 +1,19 @@
 
 import React from 'react';
 import Navigation from '../components/Navigation';
-import HeroSection from '../components/HeroSection';
+import PortfolioSection from '../components/PortfolioSection';
 import Footer from '../components/Footer';
 
-const Index = () => {
+const Portfolio = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
+      <div className="pt-20">
+        <PortfolioSection />
+      </div>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Portfolio;
