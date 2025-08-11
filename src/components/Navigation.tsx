@@ -23,13 +23,17 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-warm-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          {/* Logo e Nome da Empresa */}
+          <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/c03e1008-e97b-479a-bd17-2d7b257d4078.png" 
               alt="CSC Investimentos Imobiliários" 
               className="h-12 w-auto"
             />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-forest-green-800 leading-tight">CSC - Investimentos</span>
+              <span className="text-sm text-neutral-warm-600 leading-tight">Imobiliários e Serviços Diversificados</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
