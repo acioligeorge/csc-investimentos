@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-6">
               <img 
-                src="/lovable-uploads/c03e1008-e97b-479a-bd17-2d7b257d4078.png" 
+                src="/placeholder.svg" 
                 alt="CSC Investimentos Imobiliários" 
                 className="h-10 w-auto"
               />
